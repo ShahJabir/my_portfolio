@@ -60,8 +60,8 @@ Follow these steps to set up the project locally on your machine.
 You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [NPM](http://npmjs.com)) installed on your computer.
 
 ```
-node@v20.17.0 or higher
-npm@9.9.3 or higher
+node@v22.11.0 or higher
+npm@10.9.0 or higher
 git@2.46.0 or higher
 ```
 
@@ -75,7 +75,7 @@ pnpm@v9.12.3 or higher
 
 **Cloning the Repository**
 
-From your command line, first clone:
+From your command line, first clone Simplefolio:
 
 <!-- # Clone the repository -->
 
@@ -88,7 +88,7 @@ $ git clone https://github.com/ShahJabir/my_portfolio
 
 ```bash
 # Move into the repository
-$ cd Shahjabir_Portfolio
+$ cd my_portfolio
 ```
 
 **Installation and Running the Project**
@@ -100,13 +100,13 @@ $ cd Shahjabir_Portfolio
 $ git remote remove origin
 ```
 
-After that, you can install the dependencies either using NPM or Yarn.
+After that, you can install the dependencies either using NPM or pnpm.
 
 Using NPM: Simply run the below commands.
 
 ```bash
 # Fix Dependencies
-$ pnpm audit fix
+$ pnpm audit --fix
 ```
 
 ```bash
@@ -116,10 +116,10 @@ $ pnpm install
 
 ```bash
 # Start the development server
-$ pnpm run dev
+$ pnpm start
 ```
 
-Once your server has started, go to this url `http://localhost:3000/` to see the portfolio locally.
+Once your server has started, go to this url `http://localhost:{PORT}/` to see the portfolio locally.
 
 ## <a name="authors"> Author </a>
 
